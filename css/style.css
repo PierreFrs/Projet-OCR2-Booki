@@ -226,7 +226,6 @@ input:focus {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
-  box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
@@ -321,6 +320,34 @@ input:focus {
 }
 
 /******* Activités *******/
+.activites {
+  justify-content: space-between;
+  margin-top: 2.3rem;
+}
+
+.activites-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.activites-cards .card {
+  display: flex;
+  flex-direction: column;
+  width: 297.5px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.activites-cards img {
+  width: 100%;
+  height: 380px;
+}
+
+.activites-cards h3 {
+  padding: 20px;
+}
 
 /******* Footer *******/
 
