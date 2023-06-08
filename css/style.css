@@ -321,6 +321,7 @@ input:focus {
 
 /******* Activités *******/
 .activites {
+  margin-top: 65px;
   justify-content: space-between;
   margin-top: 2.3rem;
 }
