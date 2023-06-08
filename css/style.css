@@ -51,6 +51,11 @@ body {
   font-size: 16px;
 }
 
+.card-subtitle {
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
 .euro {
   font-weight: 700;
 }
@@ -214,6 +219,7 @@ input:focus {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  margin-top: 2.3rem;
 }
 
 .hebergements-and-populaires section {
@@ -248,9 +254,17 @@ input:focus {
 
 .hebergements-cards img {
   width: 100%;
-  height: 124px;
+  height: 110px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+  padding: 0.5rem 0.5rem;
+}
+
+.hebergements-cards .card-rating {
+  margin-top: 0.3rem;
 }
 
 .more-btn {
@@ -259,6 +273,7 @@ input:focus {
   font-weight: bold;
   font-size: 18px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 /****** Populaires ***********/
