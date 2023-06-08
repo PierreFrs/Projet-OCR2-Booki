@@ -68,7 +68,7 @@ header {
 
 .logo-container {
   width: 3.75rem;
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 .logo {
@@ -91,10 +91,93 @@ header {
 }
 
 /******* Search Area *******/
+.search-container {
+  margin-top: 2rem;
+}
+
+.search-container .sub-title {
+  margin-top: 0.5rem;
+}
+
+.search-form {
+  display: flex;
+  justify-content: flex-between;
+  margin-top: 2rem;
+  height: 50px;
+  width: fit-content;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid var(--main-bg-color);
+}
+
+.location-btn {
+  width: 50px;
+  padding: 1rem;
+  border: none;
+  background-color: var(--main-bg-color);
+  cursor: pointer;
+}
+.location-btn i {
+  width: 100%;
+}
+
+.search-input {
+  height: 100%;
+  border: none;
+  font-weight: bold;
+  padding: 0, 1.5rem;
+  font-size: 18px;
+}
+
+.search-input::placeholder {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  opacity: 1;
+}
+
+.search-input:focus::placeholder {
+  color: transparent;
+  border-color: white;
+}
+
+input:focus {
+  outline: none;
+  text-indent: 1.5rem;
+}
+
+.search-btn {
+  font-size: 18px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  border: 1px solid var(----main-color);
+  position: relative;
+  right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  display: none;
+}
+
+.filters-container {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 .filter-btn {
+  font-size: 18px;
   font-weight: bold;
   background-color: white;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 1px solid var(--secondary-bg-color);
   border-radius: 100px;
 }
@@ -104,6 +187,25 @@ header {
 
 .filter-btn:hover {
   background-color: var(--filter-bg-color);
+}
+
+.search-result-info-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.info-icon-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+  color: var(--main-color);
+  border: 1px solid var(--secondary-bg-color);
+  border-radius: 100%;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -215,5 +317,37 @@ header {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  .main-container {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  header {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .logo-container {
+    margin: auto;
+  }
+
+  .tabs-container {
+    width: 100%;
+  }
+  .tab {
+    border-bottom: 2px solid var(--main-bg-color);
+    padding-bottom: 1rem;
+  }
+
+  .tab:hover {
+    border-top: none;
+    border-bottom: 2px solid var(--main-color);
+  }
+
+  .search-btn span {
+    display: none;
+  }
+
+  .fa-magnifying-glass {
+    display: block;
+  }
 }
