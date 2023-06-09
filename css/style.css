@@ -22,11 +22,18 @@ body {
   justify-content: center;
 }
 
+.text-18 {
+  font-size: 18px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   max-width: 1440px;
   min-width: 320px;
   padding: 0 50px;
@@ -79,10 +86,6 @@ header {
   margin-top: 30px;
 }
 
-.logo {
-  width: 100%;
-}
-
 .tabs-container {
   display: flex;
   gap: 70px;
@@ -125,16 +128,12 @@ header {
   background-color: var(--main-bg-color);
   cursor: pointer;
 }
-.location-btn i {
-  width: 100%;
-}
 
 .search-input {
   height: 100%;
   border: none;
   font-weight: bold;
   padding: 0, 24px;
-  font-size: 18px;
 }
 
 .search-input::placeholder {
@@ -155,7 +154,6 @@ input:focus {
 }
 
 .search-btn {
-  font-size: 18px;
   background-color: var(--main-color);
   color: white;
   font-weight: bold;
@@ -173,7 +171,6 @@ input:focus {
 }
 
 .filters-area {
-  font-size: 18px;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -191,7 +188,6 @@ input:focus {
 .filter-btn {
   display: flex;
   align-items: center;
-  font-size: 18px;
   font-weight: bold;
   background-color: white;
   padding: 16px 24px;
@@ -263,7 +259,6 @@ input:focus {
 }
 
 .hebergements-cards img {
-  width: 100%;
   height: 110px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -281,7 +276,6 @@ input:focus {
   background-color: inherit;
   border: none;
   font-weight: bold;
-  font-size: 18px;
   margin-top: 30px;
   cursor: pointer;
 }
@@ -355,7 +349,6 @@ input:focus {
 }
 
 .activites-cards img {
-  width: 100%;
   height: 380px;
 }
 
@@ -366,16 +359,11 @@ input:focus {
 /******* Footer *******/
 
 footer {
-  width: 100%;
   background-color: var(--main-bg-color);
   padding: 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-}
-
-footer h3 {
-  font-size: 18px;
 }
 
 footer ul {
@@ -471,6 +459,14 @@ footer ul li {
   .search-container {
     padding: 0 20px;
     margin-top: 34px;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
   }
 
   .search-btn span {
