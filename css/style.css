@@ -409,6 +409,20 @@ footer ul li {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .activites .card {
+    height: 270px;
+    width: 194px;
+  }
+
+  .activites .card img {
+    height: 200px;
+    width: 194px;
+  }
+
+  .activites .card h3 {
+    height: 70px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
