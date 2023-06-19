@@ -78,6 +78,22 @@ body {
   color: var(--main-bg-color);
 }
 
+.fa-location-dot {
+  color: #000000;
+}
+
+.fa-magnifying-glass {
+  color: #ffffff;
+}
+
+.fa-money-bill-wave,
+.fa-person,
+.fa-heart,
+.fa-fire,
+.fa-info {
+  color: #0065fc;
+}
+
 /****** Header *******/
 
 header {
